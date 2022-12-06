@@ -16,11 +16,14 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@linaria/core": "^4.2.4",
+    "@linaria/react": "^4.3.2",
     "@mdx-js/react": "^2.1.5",
     "gatsby": "^5.2.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-google-analytics": "^5.2.0",
     "gatsby-plugin-image": "^3.2.0",
+    "gatsby-plugin-linaria": "^4.0.1",
     "gatsby-plugin-manifest": "^5.2.0",
     "gatsby-plugin-mdx": "^5.2.0",
     "gatsby-plugin-sharp": "^5.2.0",
