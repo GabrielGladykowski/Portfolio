@@ -52,8 +52,21 @@ const config: GatsbyConfig = {
         preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
         web: [
           {
-            name: `Open Sans`,
+            name: `Montserrat`,
             file: `https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap`,
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Niconne`,
+            file: `https://fonts.googleapis.com/css2?family=Niconne:wght@400&display=swap`,
           },
         ],
       },
