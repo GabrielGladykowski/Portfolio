@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navigation } from '../navigation/Navigation';
 import {
   HomeStyled,
   LetteringLogo,
@@ -11,7 +12,7 @@ import {
 } from './Home.styled';
 
 export const Home = () => (
-  <HomeStyled>
+  <HomeStyled id="home">
     <NameAndLastName>
       Gabriel Gładykowski
       <Underscore />

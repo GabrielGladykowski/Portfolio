@@ -10,10 +10,9 @@ import {
   WorkWrapper,
 } from './Work.styled';
 import screenshot from '../../images/watch_portfolio.png';
-import { AboutMe } from './AboutMe';
 
 export const Work: FC = () => (
-  <WorkStyled>
+  <WorkStyled id="work">
     <WorkWrapper>
       <WorkTitle>Watch</WorkTitle>
       <WorkSubtitle>Modeled Design</WorkSubtitle>
@@ -21,7 +20,7 @@ export const Work: FC = () => (
         This is a modeled design of the Rolex Datejust 41 that was created in React with typescript.
       </WorkDescription>
       <WorkImage src={screenshot} alt="" />
-      <WorkLink href="https://react-watch-datejust.netlify.app">
+      <WorkLink href="https://react-watch-datejust.netlify.app" target="_blank" rel="noopener">
         View Project
         <WorkUnderscore />
       </WorkLink>

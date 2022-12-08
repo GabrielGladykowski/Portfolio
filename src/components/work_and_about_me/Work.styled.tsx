@@ -1,7 +1,7 @@
-import { styled } from '@linaria/react';
+import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
-export const WorkStyled = styled.aside`
+export const WorkStyled = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ export const WorkWrapper = styled.div`
   width: auto;
   padding: 20px 0;
   margin: 20px;
-  top: 54rem;
+  /* top: 54rem; */
   color: ${COLORS.FONT_COLOR};
 `;
 
@@ -62,6 +62,7 @@ export const WorkLink = styled.a`
   align-items: center;
   justify-content: center;
   position: relative;
+  color: ${COLORS.FONT_COLOR};
 `;
 
 export const WorkUnderscore = styled.div`

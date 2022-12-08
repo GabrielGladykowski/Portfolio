@@ -7,17 +7,13 @@ import { AboutMe } from './work_and_about_me/AboutMe';
 import { Work } from './work_and_about_me/Work';
 
 export const Portfolio = () => (
-  // <PortfolioStyled>
-  <>
+  <PortfolioStyled>
     <Navigation />
-
     <Home />
 
     <Work />
-
     <AboutMe />
 
     <Contact />
-  </>
-  // </PortfolioStyled>
+  </PortfolioStyled>
 );
