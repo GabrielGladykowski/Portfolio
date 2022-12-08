@@ -1,7 +1,6 @@
-import { css } from '@linaria/core';
+import { createGlobalStyle } from 'styled-components';
 
-export const GLOBALSTYLE = css`
-  :global() {
+export const GLOBALSTYLE = createGlobalStyle`
     * {
       padding: 0;
       margin: 0;
@@ -15,11 +14,11 @@ export const GLOBALSTYLE = css`
 
     html {
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: Montserrat;
       letter-spacing: 5%;
     }
-  }
 `;

@@ -1,12 +1,13 @@
-import { styled } from '@linaria/react';
+import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
 export const HomeStyled = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 844px;
   position: relative;
   color: ${COLORS.FONT_COLOR};
 `;

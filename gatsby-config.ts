@@ -11,7 +11,7 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-typescript',
-    'gatsby-plugin-linaria',
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
