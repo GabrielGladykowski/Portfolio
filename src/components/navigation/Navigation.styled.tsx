@@ -1,4 +1,3 @@
-import { truncate } from 'fs/promises';
 import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
@@ -7,7 +6,8 @@ export const NavigationStyled = styled.nav`
   position: fixed;
   z-index: 1;
   width: 100%;
-  top: 10px;
+  top: 0;
+  left: 0;
 
   @media (min-width: 1024px) {
     position: static;
