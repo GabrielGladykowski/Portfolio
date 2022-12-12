@@ -16,18 +16,41 @@ export const NameAndLastName = styled.p`
   display: flex;
   position: absolute;
   font-size: 20px;
-  top: 2.5rem;
+  top: 3rem;
   align-items: center;
   justify-content: center;
+
+  ::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 180px;
+    background-color: ${COLORS.PRIMARY};
+    border-radius: 50px;
+    bottom: -3px;
+  }
+
+  @media (min-width: 1024px) {
+    left: 5rem;
+  }
 `;
 
-export const Underscore = styled.div`
-  position: absolute;
-  height: 2px;
-  width: 200px;
-  background-color: ${COLORS.PRIMARY};
-  border-radius: 50px;
-  bottom: -3px;
+export const HomeWrapper = styled.div`
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    flex-direction: row;
+  }
 `;
 
 export const Logo = styled.div`
@@ -36,8 +59,14 @@ export const Logo = styled.div`
   height: 273px;
   width: 273px;
   background-color: ${COLORS.PRIMARY};
-  top: 10rem;
+  top: 8rem;
   border-radius: 50%;
+
+  @media (min-width: 1024px) {
+    left: 0;
+    top: 0;
+    position: relative;
+  }
 `;
 
 export const LetteringLogo = styled.span`
@@ -51,10 +80,23 @@ export const LetteringLogo = styled.span`
 `;
 
 export const TittleWraper = styled.div`
-  position: absolute;
+  position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  top: 33rem;
+  top: 12rem;
+
+  @media (min-width: 1024px) {
+    text-align: start;
+    justify-content: center;
+    align-items: flex-start;
+    width: max-content;
+    top: 0;
+    margin-left: 10px;
+  }
 `;
 
 export const Tittle = styled.h1`

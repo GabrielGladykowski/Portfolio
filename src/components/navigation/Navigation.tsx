@@ -11,8 +11,6 @@ import {
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(isOpen, 'dupa');
-
   const NavigationHidden = () => {
     setIsOpen(!isOpen);
   };
@@ -36,7 +34,7 @@ export const Navigation = () => {
         </NavigationList>
         <NavigationList>
           <NavigationLink tabIndex={isOpen ? 0 : -1} href="#aboutMe" onClick={NavigationHidden}>
-            About Me
+            About me
           </NavigationLink>
         </NavigationList>
         <NavigationList>

@@ -1,29 +1,42 @@
 import React, { FC } from 'react';
 import {
+  WorkBorder,
   WorkDescription,
   WorkImage,
   WorkLink,
   WorkStyled,
   WorkSubtitle,
+  WorkTextWrapper,
   WorkTitle,
-  WorkUnderscore,
+  WorkTitleWrapper,
   WorkWrapper,
 } from './Work.styled';
-import screenshot from '../../images/watch_portfolio.png';
+import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';
 
-export const Work: FC = () => (
-  <WorkStyled id="work">
-    <WorkWrapper>
-      <WorkTitle>Watch</WorkTitle>
-      <WorkSubtitle>Modeled Design</WorkSubtitle>
-      <WorkDescription>
-        This is a modeled design of the Rolex Datejust 41 that was created in React with typescript.
-      </WorkDescription>
-      <WorkImage src={screenshot} alt="" />
-      <WorkLink href="https://react-watch-datejust.netlify.app" target="_blank" rel="noopener">
-        View Project
-        <WorkUnderscore />
-      </WorkLink>
-    </WorkWrapper>
-  </WorkStyled>
-);
+export const Work: FC = () => {
+  return (
+    <WorkStyled id="work">
+      <WorkBorder>
+        <WorkWrapper>
+          <WorkTextWrapper>
+            <WorkTitleWrapper>
+              <WorkTitle>Watch</WorkTitle>
+              <WorkSubtitle>Modeled Design</WorkSubtitle>
+            </WorkTitleWrapper>
+            <WorkDescription>
+              This is a modeled design of the Rolex Datejust 41 that was created in React with
+              typescript.
+            </WorkDescription>
+          </WorkTextWrapper>
+          <WorkImage>
+            <StaticImage src="../../images/watch_portfolio.png" alt="lalala" />
+          </WorkImage>
+          <WorkLink href="https://react-watch-datejust.netlify.app" target="_blank" rel="noopener">
+            View Project
+          </WorkLink>
+        </WorkWrapper>
+      </WorkBorder>
+    </WorkStyled>
+  );
+};
