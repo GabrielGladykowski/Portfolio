@@ -2,33 +2,71 @@ import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
 export const ContactWrapper = styled.footer`
+  width: 100%;
+  height: 183px;
+  background-color: ${COLORS.FONT_COLOR};
+
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+  }
+`;
+
+export const ContactContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100%;
-  height: 183px;
-  background-color: ${COLORS.FONT_COLOR};
-  /* top: 61rem; */
+  flex-direction: column;
+  top: 20px;
+
+  @media (min-width: 1024px) {
+    align-items: flex-start;
+    left: 20px;
+  }
 `;
 
 export const ContactTitle = styled.h2`
-  position: absolute;
+  /* position: absolute; */
   font-size: 30px;
   font-weight: 600;
   top: 15px;
   color: ${COLORS.FONT_COLOR_DARK_MODE};
+  padding: 10px;
 `;
 
 export const ContactLinksWrapper = styled.nav`
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
 `;
 
 export const ContactLink = styled.a`
   font-size: 20px;
   font-weight: 500;
-  padding: 10px 10px;
+  padding: 0 10px;
   text-decoration: none;
   color: ${COLORS.FONT_COLOR_DARK_MODE};
+
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ::after {
+      content: '';
+      visibility: visible;
+      position: absolute;
+      height: 2px;
+      width: 10px;
+      background-color: ${COLORS.FONT_COLOR_DARK_MODE};
+      border-radius: 50px;
+      bottom: -3px;
+      transition: width 0.2s linear;
+    }
+
+    :hover::after {
+      width: 50px;
+      transition: width 0.2s linear;
+    }
+  }
 `;

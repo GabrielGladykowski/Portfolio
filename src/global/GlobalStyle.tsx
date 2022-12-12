@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { COLORS } from '../const/COLORS';
 
 export const GLOBALSTYLE = createGlobalStyle`
     * {
@@ -20,5 +21,9 @@ export const GLOBALSTYLE = createGlobalStyle`
     body {
       font-family: Montserrat;
       letter-spacing: 5%;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
     }
 `;
