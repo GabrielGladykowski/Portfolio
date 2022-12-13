@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { setCookie, getCookie } from 'typescript-cookie';
-// import { getCookie } from 'typescript-cookie/dist/src/api';
 import {
   CookiesButton,
   CookiesHeader,
@@ -25,15 +24,13 @@ export const Cookies = () => {
     }
   }, []);
 
-  return (
-    !isAccpet && (
-      <CookiesStyled>
-        <CoookieWrapperText>
-          <CookiesHeader>Hello, this site uses cookies.</CookiesHeader>
-          <CookieText>By using the site, you agree to their storage.</CookieText>
-        </CoookieWrapperText>
-        <CookiesButton onClick={AcceptCookies}>accept</CookiesButton>
-      </CookiesStyled>
-    )
-  );
+  return !isAccpet ? (
+    <CookiesStyled>
+      <CoookieWrapperText>
+        <CookiesHeader>Hello, this site uses cookies.</CookiesHeader>
+        <CookieText>By using the site, you agree to their storage.</CookieText>
+      </CoookieWrapperText>
+      <CookiesButton onClick={AcceptCookies}>accept</CookiesButton>
+    </CookiesStyled>
+  ) : null;
 };
