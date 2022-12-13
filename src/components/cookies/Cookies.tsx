@@ -29,7 +29,7 @@ export const Cookies = () => {
     !isAccpet && (
       <CookiesStyled>
         <CoookieWrapperText>
-          <CookiesHeader>Hello, this site uses cookies</CookiesHeader>
+          <CookiesHeader>Hello, this site uses cookies.</CookiesHeader>
           <CookieText>By using the site, you agree to their storage.</CookieText>
         </CoookieWrapperText>
         <CookiesButton onClick={AcceptCookies}>accept</CookiesButton>

@@ -17,7 +17,7 @@ export const CookiesStyled = styled.aside`
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    width: 465px;
+    width: 600px;
     right: 10px;
   }
 `;
@@ -28,6 +28,8 @@ export const CoookieWrapperText = styled.div`
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    left: 10px;
+    width: 100%;
   }
 `;
 
@@ -35,6 +37,7 @@ export const CookiesHeader = styled.h2`
   font-size: 20px;
   color: ${COLORS.FONT_COLOR_DARK_MODE};
   font-weight: 500;
+  text-align: center;
 `;
 
 export const CookieText = styled.p`
@@ -58,8 +61,16 @@ export const CookiesButton = styled.button`
   font-size: 20px;
   color: ${COLORS.PRIMARY};
   text-transform: uppercase;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s linear;
 
   @media (min-width: 1024px) {
     margin: 0;
+
+    :hover {
+      transform: scale(1.05);
+      transition: transform 0.2s linear;
+    }
   }
 `;
