@@ -7,6 +7,8 @@ export const WorkStyled = styled.section`
   align-items: center;
   width: 100%;
   height: 100%;
+  color: ${(props) => props.theme.color};
+  transition: ${(props) => props.theme.transitionColor};
 `;
 
 export const WorkBorder = styled.div`
@@ -16,8 +18,6 @@ export const WorkBorder = styled.div`
   margin: 20px;
   height: auto;
   width: auto;
-
-  color: ${COLORS.FONT_COLOR};
 
   @media (min-width: 1024px) {
     justify-content: center;
@@ -86,7 +86,8 @@ export const WorkDescription = styled.p`
 export const WorkImage = styled.picture`
   width: auto;
   height: 400px;
-  border: 5px solid ${COLORS.FONT_COLOR};
+  border: 5px solid ${(props) => props.theme.backgroundColorBorder};
+  transition: ${(props) => props.theme.transitionColorBorder};
   box-shadow: 0 5px 10px ${COLORS.FONT_COLOR};
   border-radius: 5px;
   object-fit: cover;
@@ -108,7 +109,8 @@ export const WorkLink = styled.a`
   align-items: center;
   justify-content: center;
   position: relative;
-  color: ${COLORS.FONT_COLOR};
+  color: ${(props) => props.theme.color};
+  transition: ${(props) => props.theme.transitionColor};
 
   ::after {
     content: '';

@@ -9,7 +9,6 @@ export const HomeStyled = styled.header`
   width: 100%;
   height: 844px;
   position: relative;
-  color: ${COLORS.FONT_COLOR};
 `;
 
 export const NameAndLastName = styled.p`
@@ -19,6 +18,9 @@ export const NameAndLastName = styled.p`
   top: 3rem;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: ${(props) => props.theme.color};
+  transition: ${(props) => props.theme.transitionColor};
 
   ::after {
     content: '';
@@ -102,10 +104,12 @@ export const TittleWraper = styled.div`
 export const Tittle = styled.h1`
   font-size: 40px;
   color: ${COLORS.PRIMARY};
+
   font-weight: 600;
 `;
 
 export const LittleTittle = styled(Tittle)`
   font-size: 32px;
-  color: ${COLORS.FONT_COLOR};
+  color: ${(props) => props.theme.color};
+  transition: ${(props) => props.theme.transitionColor};
 `;

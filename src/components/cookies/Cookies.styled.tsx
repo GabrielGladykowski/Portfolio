@@ -64,6 +64,7 @@ export const CookiesButton = styled.button`
   cursor: pointer;
   transform: scale(1);
   transition: transform 0.2s linear;
+  font-family: Montserrat;
 
   @media (min-width: 1024px) {
     margin: 0;
