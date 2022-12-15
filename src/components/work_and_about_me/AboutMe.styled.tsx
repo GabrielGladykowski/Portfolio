@@ -12,7 +12,8 @@ export const AboutMeWrapper = styled.article`
   flex-direction: column;
   padding: 3%;
   margin: 5% 0;
-  color: ${COLORS.FONT_COLOR};
+  color: ${(props) => props.theme.color};
+  transition: ${(props) => props.theme.transitionColor};
 `;
 
 export const AboutMeTitle = styled.h2`

@@ -4,7 +4,7 @@ import { COLORS } from '../../const/COLORS';
 export const NavigationStyled = styled.nav`
   display: flex;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   top: 0;
   left: 0;
@@ -19,7 +19,8 @@ export const NavigatorButton = styled.button`
   position: absolute;
   width: 55px;
   height: 55px;
-  background-color: ${COLORS.FONT_COLOR};
+  background-color: ${(props) => props.theme.backgroundColorButton};
+  transition: ${(props) => props.theme.transitionBackgroundColor};
   border-radius: 10px 0 0 10px;
   border: none;
   top: 0;
@@ -38,7 +39,7 @@ export const NavigatorHamburger = styled.div`
   position: absolute;
   width: 35px;
   height: 4px;
-  background-color: ${COLORS.FONT_COLOR_DARK_MODE};
+  background-color: ${(props) => props.theme.backgroundColor};
   border-radius: 4px;
   &::after,
   &::before {
@@ -47,7 +48,7 @@ export const NavigatorHamburger = styled.div`
     width: 35px;
     height: 4px;
     border-radius: 4px;
-    background-color: ${COLORS.FONT_COLOR_DARK_MODE};
+    background-color: ${(props) => props.theme.backgroundColor};
     left: 0;
   }
   &::after {
@@ -106,7 +107,8 @@ export const NavigationLink = styled.a<{ isShow?: boolean }>`
   @media (min-width: 1024px) {
     display: flex;
     position: static;
-    color: ${COLORS.FONT_COLOR};
+    color: ${(props) => props.theme.color};
+    transition: ${(props) => props.theme.transitionColor};
     margin: 0 5px;
     padding: 0;
 
