@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { COLORS } from '../../const/COLORS';
 
 export const HomeDarkMode = styled.button`
   width: max-content;

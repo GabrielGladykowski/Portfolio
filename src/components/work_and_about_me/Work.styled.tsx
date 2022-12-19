@@ -88,7 +88,7 @@ export const WorkImage = styled.picture`
   height: 400px;
   border: 5px solid ${(props) => props.theme.backgroundColorBorder};
   transition: ${(props) => props.theme.transitionColorBorder};
-  box-shadow: 0 5px 10px ${COLORS.FONT_COLOR};
+  box-shadow: 0 5px 10px ${COLORS.BLACK};
   border-radius: 5px;
   object-fit: cover;
   display: flex;
@@ -111,6 +111,11 @@ export const WorkLink = styled.a`
   position: relative;
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
+
+  :active {
+    transition: none;
+    color: ${COLORS.PRIMARY};
+  }
 
   ::after {
     content: '';

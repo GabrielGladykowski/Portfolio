@@ -11,8 +11,7 @@ import {
   WorkTitleWrapper,
   WorkWrapper,
 } from './Work.styled';
-import { StaticImage, GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export const Work: FC = () => {
   return (

@@ -3,7 +3,7 @@ import { Contact } from './contact/Contact';
 import { Cookies } from './cookies/Cookies';
 import { Home } from './home/Home';
 import { Navigation } from './navigation/Navigation';
-import { darkTheme, lightTheme } from './PageMode.data';
+import { darkTheme, lightTheme } from './dark_mode/DarkMode.data';
 import { PortfolioStyled } from './Portfolio.styled';
 import { AboutMe } from './work_and_about_me/AboutMe';
 import { Work } from './work_and_about_me/Work';

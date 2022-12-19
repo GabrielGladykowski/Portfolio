@@ -4,7 +4,7 @@ import { COLORS } from '../../const/COLORS';
 export const ContactWrapper = styled.footer`
   width: 100%;
   height: 183px;
-  background-color: ${COLORS.FONT_COLOR};
+  background-color: ${COLORS.BLACK};
 
   @media (min-width: 1024px) {
     justify-content: flex-start;
@@ -30,7 +30,7 @@ export const ContactTitle = styled.h2`
   font-size: 30px;
   font-weight: 600;
   top: 15px;
-  color: ${COLORS.FONT_COLOR_DARK_MODE};
+  color: ${COLORS.WHITE};
   padding: 10px;
 `;
 
@@ -45,7 +45,11 @@ export const ContactLink = styled.a`
   font-weight: 500;
   padding: 0 10px;
   text-decoration: none;
-  color: ${COLORS.FONT_COLOR_DARK_MODE};
+  color: ${COLORS.WHITE};
+
+  :active {
+    color: ${COLORS.PRIMARY};
+  }
 
   @media (min-width: 1024px) {
     display: flex;
@@ -58,7 +62,7 @@ export const ContactLink = styled.a`
       position: absolute;
       height: 2px;
       width: 10px;
-      background-color: ${COLORS.FONT_COLOR_DARK_MODE};
+      background-color: ${COLORS.WHITE};
       border-radius: 50px;
       bottom: -3px;
       transition: width 0.2s linear;
@@ -67,6 +71,10 @@ export const ContactLink = styled.a`
     :hover::after {
       width: 50px;
       transition: width 0.2s linear;
+    }
+
+    :active::after {
+      background-color: ${COLORS.PRIMARY};
     }
   }
 `;

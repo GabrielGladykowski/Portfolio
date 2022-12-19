@@ -72,7 +72,7 @@ export const NavigationPoint = styled.ul<{ isOpen?: boolean }>`
   transition: transform 0.2s linear;
 
   @media (min-width: 1024px) {
-    transform: translateX(0);
+    transform: none;
     flex-direction: row;
     background-color: transparent;
     top: 3rem;
@@ -98,9 +98,9 @@ export const NavigationLink = styled.a<{ isShow?: boolean }>`
   background-color: transparent;
   border: none;
   text-decoration: none;
-  color: ${COLORS.FONT_COLOR_DARK_MODE};
+  color: ${COLORS.WHITE};
   :active {
-    background-color: ${COLORS.FONT_COLOR};
+    background-color: ${COLORS.BLACK};
     transition: background-color 0.1s linear;
   }
 
