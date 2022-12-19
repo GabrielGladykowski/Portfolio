@@ -12,7 +12,7 @@ export const Contact = () => (
     <ContactContainer>
       <ContactTitle>Contact</ContactTitle>
       <ContactLinksWrapper>
-        <ContactLink href="mailto: gabriel.gladki2003@gmail.com" target="_blank">
+        <ContactLink href="mailto: gabriel.gladki2003@gmail.com" target="_blank" rel="noopener">
           Email
         </ContactLink>
         <ContactLink href="https://github.com/GabrielGladykowski" target="_blank" rel="noopener">

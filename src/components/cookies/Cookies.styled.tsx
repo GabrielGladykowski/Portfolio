@@ -35,7 +35,7 @@ export const CoookieWrapperText = styled.div`
 
 export const CookiesHeader = styled.h2`
   font-size: 20px;
-  color: ${COLORS.FONT_COLOR_DARK_MODE};
+  color: ${COLORS.WHITE};
   font-weight: 500;
   text-align: center;
 `;
@@ -43,7 +43,7 @@ export const CookiesHeader = styled.h2`
 export const CookieText = styled.p`
   text-align: center;
   font-size: 20px;
-  color: ${COLORS.FONT_COLOR_DARK_MODE};
+  color: ${COLORS.WHITE};
 
   @media (min-width: 1024px) {
     text-align: start;
@@ -53,7 +53,7 @@ export const CookieText = styled.p`
 export const CookiesButton = styled.button`
   width: max-content;
   height: 40px;
-  background-color: ${COLORS.FONT_COLOR_DARK_MODE};
+  background-color: ${COLORS.WHITE};
   border-radius: 10px;
   border: none;
   padding: 0 5px;

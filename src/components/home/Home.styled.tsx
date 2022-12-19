@@ -78,7 +78,7 @@ export const LetteringLogo = styled.span`
   right: 60px;
   font-family: Niconne;
   font-size: 70px;
-  color: ${COLORS.FONT_COLOR_DARK_MODE};
+  color: ${COLORS.WHITE};
 `;
 
 export const TittleWraper = styled.div`
