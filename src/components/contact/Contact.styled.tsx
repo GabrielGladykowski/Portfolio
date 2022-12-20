@@ -73,5 +73,9 @@ export const ContactLink = styled.a`
       width: 50px;
       transition: width 0.2s linear;
     }
+
+    :active::after {
+      background-color: ${COLORS.PRIMARY};
+    }
   }
 `;
