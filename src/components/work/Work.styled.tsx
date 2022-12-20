@@ -2,61 +2,61 @@ import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
 export const WorkStyled = styled.section`
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
 `;
 
 export const WorkBorder = styled.div`
-  border-radius: 15px;
-  box-shadow: 0 0 20px ${COLORS.BORDER_AND_SHADOW};
-  padding: 20px 0;
-  margin: 20px;
   height: auto;
   width: auto;
+  margin: 20px;
+  padding: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px ${COLORS.BORDER_AND_SHADOW};
 
   @media (min-width: 1024px) {
-    justify-content: center;
-    align-content: center;
-    text-align: start;
-    padding: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: start;
   }
 `;
 
 export const WorkWrapper = styled.div`
   display: flex;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
+  text-align: center;
 `;
 
 export const WorkTextWrapper = styled.div`
   @media (min-width: 1024px) {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: start;
+    justify-content: center;
     flex-direction: row;
+    text-align: start;
   }
 `;
 
 export const WorkTitleWrapper = styled.header`
   @media (min-width: 1024px) {
-    text-align: start;
+    width: 200px;
     display: flex;
     flex-direction: column;
-    width: 200px;
     margin: 0 20px;
+    text-align: start;
   }
 `;
 
@@ -73,26 +73,26 @@ export const WorkSubtitle = styled.h3`
 `;
 
 export const WorkDescription = styled.p`
-  font-size: 20px;
-  line-height: 30px;
   padding: 10px 50px;
+  line-height: 30px;
+  font-size: 20px;
 
   @media (min-width: 1024px) {
-    padding: 0;
     width: 400px;
+    padding: 0;
   }
 `;
 
 export const WorkImage = styled.picture`
   width: auto;
   height: 400px;
-  border: 5px solid ${(props) => props.theme.backgroundColorBorder};
-  transition: ${(props) => props.theme.transitionColorBorder};
-  box-shadow: 0 5px 10px ${COLORS.BLACK};
-  border-radius: 5px;
-  object-fit: cover;
   display: flex;
   margin: 10px 50px;
+  border: 5px solid ${(props) => props.theme.backgroundColorBorder};
+  border-radius: 5px;
+  box-shadow: 0 5px 10px ${COLORS.BLACK};
+  object-fit: cover;
+  transition: ${(props) => props.theme.transitionColorBorder};
 
   @media (min-width: 1024px) {
     width: 740px;
@@ -103,43 +103,42 @@ export const WorkImage = styled.picture`
 `;
 
 export const WorkLink = styled.a`
-  text-decoration: none;
-  font-size: 20px;
   display: flex;
+  position: relative;
+  text-decoration: none;
   align-items: center;
   justify-content: center;
-  position: relative;
+  font-size: 20px;
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
 
   :active {
+    color: ${(props) => props.theme.underlined};
     transition: none;
-    color: ${COLORS.PRIMARY};
   }
 
   ::after {
     content: '';
-    position: absolute;
-    height: 2px;
-    width: 20px;
-    background-color: ${COLORS.PRIMARY};
-    border-radius: 50px;
-    bottom: -3px;
-    transition: width 0.2s linear;
-  }
-  :hover::after {
-    content: '';
-    position: absolute;
-    height: 2px;
+    height: 3px;
     width: 100px;
-    background-color: ${COLORS.PRIMARY};
-    border-radius: 50px;
+    position: absolute;
     bottom: -3px;
-    transition: width 0.2s linear;
+    border-radius: 50px;
+    background-color: ${COLORS.PRIMARY};
+    transition: width 0.2s, background-color 0.2s linear;
   }
 
   @media (min-width: 1024px) {
     position: absolute;
     top: 105px;
+
+    ::after {
+      width: 20px;
+    }
+
+    :hover::after {
+      width: 100px;
+      transition: width 0.2s linear;
+    }
   }
 `;

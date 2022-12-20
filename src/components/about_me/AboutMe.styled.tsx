@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const AboutMeWrapper = styled.article`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  display: flex;
   position: relative;
   flex-direction: column;
-  padding: 3%;
+  align-items: center;
+  justify-content: center;
   margin: 5% 0;
+  padding: 3%;
+  text-align: center;
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
 `;
@@ -21,9 +21,9 @@ export const AboutMeTitle = styled.h2`
 `;
 
 export const AboutDescription = styled.p`
+  margin-top: 10px;
   font-size: 20px;
   font-weight: 500;
-  margin-top: 10px;
 
   @media (min-width: 768px) {
     margin: 20px 15%;

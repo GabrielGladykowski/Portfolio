@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 
 export const HomeDarkMode = styled.button`
-  width: max-content;
   height: max-content;
-  background-color: transparent;
+  width: max-content;
   display: flex;
   position: absolute;
+  z-index: 1;
+  padding: 0 0 3px 2px;
   top: 6rem;
   border: none;
-  padding: 0 0 3px 2px;
-  font-size: 20px;
   font-family: Montserrat;
+  font-size: 20px;
   cursor: pointer;
   color: ${(props) => props.theme.color};
+  background-color: transparent;
   transition: color 0.2s linear;
-  z-index: 1;
 
   @media (min-width: 1024px) {
     top: 3rem;
@@ -28,13 +28,13 @@ export const HomeWrapperMode = styled.div`
 
   ::before {
     content: '';
-    position: absolute;
-    bottom: 3px;
     height: 23px;
     width: 60px;
+    position: absolute;
+    z-index: 1;
+    bottom: 3px;
     background-color: ${(props) => props.theme.backgroundColor};
     transition: background-color 0.2s linear;
-    z-index: 1;
   }
 `;
 

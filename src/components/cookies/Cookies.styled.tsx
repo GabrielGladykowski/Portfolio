@@ -2,42 +2,42 @@ import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
 export const CookiesStyled = styled.aside`
-  width: 90%;
   height: max-content;
-  background-color: ${COLORS.PRIMARY};
-  z-index: 1;
-  position: fixed;
-  bottom: 25px;
-  border-radius: 10px;
+  width: 90%;
   display: flex;
+  position: fixed;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  z-index: 1;
   padding: 10px;
+  bottom: 25px;
+  border-radius: 10px;
+  background-color: ${COLORS.PRIMARY};
 
   @media (min-width: 1024px) {
-    flex-direction: row;
     width: 600px;
+    flex-direction: row;
     right: 10px;
   }
 `;
 
 export const CoookieWrapperText = styled.div`
   @media (min-width: 1024px) {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
     left: 10px;
-    width: 100%;
   }
 `;
 
 export const CookiesHeader = styled.h2`
-  font-size: 20px;
   color: ${COLORS.WHITE};
-  font-weight: 500;
   text-align: center;
+  font-size: 20px;
+  font-weight: 500;
 `;
 
 export const CookieText = styled.p`
@@ -51,20 +51,19 @@ export const CookieText = styled.p`
 `;
 
 export const CookiesButton = styled.button`
-  width: max-content;
   height: 40px;
-  background-color: ${COLORS.WHITE};
-  border-radius: 10px;
-  border: none;
-  padding: 0 5px;
+  width: max-content;
   margin-top: 10px;
-  font-size: 20px;
-  color: ${COLORS.PRIMARY};
+  padding: 0 5px;
+  border: none;
+  border-radius: 10px;
   text-transform: uppercase;
+  font-size: 20px;
   cursor: pointer;
+  color: ${COLORS.PRIMARY};
+  background-color: ${COLORS.WHITE};
   transform: scale(1);
   transition: transform 0.2s linear;
-  font-family: Montserrat;
 
   @media (min-width: 1024px) {
     margin: 0;

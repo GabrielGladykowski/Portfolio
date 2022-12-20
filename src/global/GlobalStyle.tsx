@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GLOBALSTYLE = createGlobalStyle`
     * {
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
     *,
@@ -13,17 +13,13 @@ export const GLOBALSTYLE = createGlobalStyle`
     }
 
     html {
+      max-width: 100vw;
       overflow-x: hidden;
       scroll-behavior: smooth;
-      max-width: 100vw;
     }
 
     body {
       font-family: Montserrat;
       letter-spacing: 5%;
-    }
-
-    ::-webkit-scrollbar {
-      width: 0;
     }
 `;

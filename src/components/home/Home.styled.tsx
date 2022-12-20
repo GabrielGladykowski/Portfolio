@@ -2,34 +2,37 @@ import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
 export const HomeStyled = styled.header`
+  height: 844px;
+  width: 100%;
   display: flex;
+  position: relative;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 844px;
-  position: relative;
 `;
 
-export const NameAndLastName = styled.p`
+export const NameAndLastName = styled.a`
   display: flex;
   position: absolute;
-  font-size: 20px;
-  top: 3rem;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  top: 3rem;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
 
   ::after {
     content: '';
-    position: absolute;
-    height: 2px;
+    height: 3px;
     width: 180px;
-    background-color: ${COLORS.PRIMARY};
-    border-radius: 50px;
+    position: absolute;
     bottom: -3px;
+    border-radius: 50px;
+    background-color: ${COLORS.PRIMARY};
+    transition: background-color 0.2s linear;
   }
 
   @media (min-width: 1024px) {
@@ -38,77 +41,85 @@ export const NameAndLastName = styled.p`
 `;
 
 export const HomeWrapper = styled.div`
+  height: 80%;
+  width: 100%;
   display: flex;
   position: relative;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 80%;
 
   @media (min-width: 1024px) {
+    width: 80%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80%;
-    flex-direction: row;
   }
 `;
 
 export const Logo = styled.div`
-  display: flex;
-  position: absolute;
   height: 273px;
   width: 273px;
-  background-color: ${COLORS.PRIMARY};
+  display: flex;
+  position: absolute;
   top: 8rem;
   border-radius: 50%;
+  background-color: ${COLORS.PRIMARY};
 
   @media (min-width: 1024px) {
-    left: 0;
-    top: 0;
     position: relative;
+    top: 0;
+    left: 0;
   }
 `;
 
 export const LetteringLogo = styled.span`
   display: flex;
   position: absolute;
-  bottom: 20px;
   right: 60px;
+  bottom: 20px;
   font-family: Niconne;
   font-size: 70px;
   color: ${COLORS.WHITE};
 `;
 
 export const TittleWraper = styled.div`
-  position: relative;
-  text-align: center;
+  width: 100%;
   display: flex;
+  position: relative;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 100%;
   top: 12rem;
+  text-align: center;
 
   @media (min-width: 1024px) {
-    text-align: start;
+    width: max-content;
     justify-content: center;
     align-items: flex-start;
-    width: max-content;
-    top: 0;
     margin-left: 10px;
+    top: 0;
+    text-align: start;
   }
 `;
 
 export const Tittle = styled.h1`
+  display: flex;
+  flex-direction: column;
   font-size: 40px;
-  color: ${COLORS.PRIMARY};
-
   font-weight: 600;
+  color: ${COLORS.PRIMARY};
 `;
 
-export const LittleTittle = styled(Tittle)`
+export const TittleDecoration = styled.span`
+  font-size: 32px;
+  font-weight: 500;
+  color: ${(props) => props.theme.color};
+  transition: ${(props) => props.theme.transitionColor};
+`;
+
+export const SubTittle = styled.p`
   font-size: 32px;
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
