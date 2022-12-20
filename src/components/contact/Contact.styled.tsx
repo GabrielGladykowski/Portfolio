@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { COLORS } from '../../const/COLORS';
 
 export const ContactWrapper = styled.footer`
-  width: 100%;
   height: 183px;
+  width: 100%;
   background-color: ${COLORS.BLACK};
 
   @media (min-width: 1024px) {
@@ -13,10 +13,10 @@ export const ContactWrapper = styled.footer`
 
 export const ContactContainer = styled.section`
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   top: 20px;
 
   @media (min-width: 1024px) {
@@ -26,12 +26,11 @@ export const ContactContainer = styled.section`
 `;
 
 export const ContactTitle = styled.h2`
-  /* position: absolute; */
+  padding: 10px;
+  top: 15px;
   font-size: 30px;
   font-weight: 600;
-  top: 15px;
   color: ${COLORS.WHITE};
-  padding: 10px;
 `;
 
 export const ContactLinksWrapper = styled.nav`
@@ -41,40 +40,38 @@ export const ContactLinksWrapper = styled.nav`
 `;
 
 export const ContactLink = styled.a`
-  font-size: 20px;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 10px;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
   color: ${COLORS.WHITE};
 
   :active {
     color: ${COLORS.PRIMARY};
   }
 
-  @media (min-width: 1024px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  ::after {
+    content: '';
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    bottom: -3px;
+    border-radius: 50px;
+    background-color: ${COLORS.PRIMARY};
+    transition: width 0.2s linear;
+  }
 
+  @media (min-width: 1024px) {
     ::after {
-      content: '';
-      visibility: visible;
-      position: absolute;
-      height: 2px;
       width: 10px;
-      background-color: ${COLORS.WHITE};
-      border-radius: 50px;
-      bottom: -3px;
-      transition: width 0.2s linear;
     }
 
     :hover::after {
       width: 50px;
       transition: width 0.2s linear;
-    }
-
-    :active::after {
-      background-color: ${COLORS.PRIMARY};
     }
   }
 `;

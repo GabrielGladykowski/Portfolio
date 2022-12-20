@@ -17,8 +17,6 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
-    "@react-icons/all-files": "^4.1.0",
-    "@types/uuid": "^9.0.0",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.2.0",
     "gatsby-omni-font-loader": "^2.0.2",
@@ -36,8 +34,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.6",
-    "typescript-cookie": "^1.0.4",
-    "uuid": "^9.0.0"
+    "typescript-cookie": "^1.0.4"
   },
   "devDependencies": {
     "@types/node": "^18.11.10",

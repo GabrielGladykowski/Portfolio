@@ -1,7 +1,7 @@
 import * as React from 'react';
-import type { PageProps } from 'gatsby';
+import { HeadFC, PageProps } from 'gatsby';
 import { GLOBALSTYLE } from '../global/GlobalStyle';
-import { Portfolio } from '../components/Portfolio';
+import { Portfolio } from '../components/layout/Portfolio';
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -13,3 +13,5 @@ const IndexPage: React.FC<PageProps> = () => {
 };
 
 export default IndexPage;
+
+export const Head: HeadFC = () => <title>Portfolio</title>;
