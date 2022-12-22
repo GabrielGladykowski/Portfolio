@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { Link, HeadFC, PageProps } from 'gatsby';
-import { COLORS } from '../../const/COLORS';
 import {
   Error404Description,
   Error404Link,
