@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import { HomeDark, HomeDarkMode, HomeLight, HomeWrapperMode } from './DarkMode.styled';
 
-export const DarkMode = ({ toggleTheme }: any) => {
+type DarkModeProps = {
+  toggleTheme: () => void;
+};
+
+export const DarkMode: FC<DarkModeProps> = ({ toggleTheme }) => {
   const [isMode, setIsMode] = useState(false);
 
   const ModeChange = () => {
