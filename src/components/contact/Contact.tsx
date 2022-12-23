@@ -25,7 +25,11 @@ export const Contact = () => (
         >
           LinkedIn
         </ContactLink>
-        <ContactLink href="https://useme.com/pl/dashboard/" target="_blank" rel="noopener">
+        <ContactLink
+          href="https://useme.com/pl/roles/contractor/gabriel-gladykowski,251264/"
+          target="_blank"
+          rel="noopener"
+        >
           Useme
         </ContactLink>
       </ContactLinksWrapper>
