@@ -14,7 +14,7 @@ import {
 export const Home = () => {
   return (
     <HomeStyled id="home">
-      <NameAndLastName href="/" target="_blank" rel="noopener">
+      <NameAndLastName href="/" rel="noopener">
         Gabriel Gładykowski
       </NameAndLastName>
       <HomeWrapper>
