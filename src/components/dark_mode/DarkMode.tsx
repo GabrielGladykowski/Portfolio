@@ -16,7 +16,7 @@ export const DarkMode: FC<DarkModeProps> = ({ toggleTheme }) => {
   return (
     <HomeDarkMode onClick={ModeChange}>
       <HomeWrapperMode>
-        <HomeLight isMode={isMode}>Ligth&nbsp;</HomeLight>{' '}
+        <HomeLight isMode={isMode}>Ligth&nbsp;</HomeLight>
         <HomeDark isMode={isMode}>Dark&nbsp;</HomeDark>
       </HomeWrapperMode>
       Mode
