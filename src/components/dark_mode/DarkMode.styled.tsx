@@ -29,7 +29,7 @@ export const HomeWrapperMode = styled.div`
   ::before {
     content: '';
     height: 23px;
-    width: 60px;
+    width: 100%;
     position: absolute;
     z-index: 1;
     bottom: 3px;
