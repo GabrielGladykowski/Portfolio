@@ -6,11 +6,9 @@ export const HomeDarkMode = styled.button`
   display: flex;
   position: absolute;
   z-index: 1;
-  padding: 0 0 3px 2px;
+  padding: 0 5px 3px 5px;
   top: 6rem;
   border: none;
-  font-family: Montserrat;
-  font-size: 20px;
   cursor: pointer;
   color: ${(props) => props.theme.color};
   background-color: transparent;
@@ -28,7 +26,7 @@ export const HomeWrapperMode = styled.div`
 
   ::before {
     content: '';
-    height: 23px;
+    height: 50%;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -39,12 +37,10 @@ export const HomeWrapperMode = styled.div`
 `;
 
 export const HomeLight = styled.span<{ isMode?: boolean }>`
-  font-size: 20px;
   transform: translateY(${({ isMode = false }) => (isMode ? 100 : 0)}%);
-  transition: transform 0.2s linear;
+  transition: transform ${({ isMode = false }) => (isMode ? '0.2s' : '0.2s 0.2s')} linear;
 `;
 export const HomeDark = styled.span<{ isMode?: boolean }>`
-  font-size: 20px;
   transform: translateY(${({ isMode = false }) => (isMode ? -100 : 0)}%);
-  transition: transform 0.2s linear;
+  transition: transform ${({ isMode = false }) => (isMode ? '0.2s 0.2s' : ' 0.2s')} linear;
 `;
