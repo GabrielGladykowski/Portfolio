@@ -3,15 +3,19 @@ import { HomeDark, HomeDarkMode, HomeLight, HomeWrapperMode } from './DarkMode.s
 import { FiSun } from '@react-icons/all-files/fi/FiSun';
 import { FiMoon } from '@react-icons/all-files/fi/FiMoon';
 import { IconContext } from '@react-icons/all-files/lib/esm/iconContext';
+import { getValueFromStorage } from '../../utils/getValueFromStorage';
 
 type DarkModeProps = {
   toggleTheme: () => void;
 };
 
 export const DarkMode: FC<DarkModeProps> = ({ toggleTheme }) => {
-  const [isMode, setIsMode] = useState(false);
+  const [isMode, setIsMode] = useState<boolean>(getValueFromStorage('isDarkMode', false));
 
   const ModeChange = () => {
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('isDarkMode', !isMode ? 'true' : 'false');
+    }
     setIsMode(!isMode);
     toggleTheme();
   };
