@@ -35,12 +35,14 @@ export const NavigatorButton = styled.button`
   }
 `;
 
-export const NavigatorHamburger = styled.div`
+export const NavigatorHamburger = styled.div<{ isOpen?: boolean }>`
   height: 4px;
   width: 35px;
   position: absolute;
   border-radius: 4px;
-  background-color: ${(props) => props.theme.backgroundColor};
+  background-color: ${({ isOpen = false }) =>
+    isOpen ? 'transparent' : (props) => props.theme.backgroundColor};
+  transition: background-color 0.15s linear;
 
   &::after,
   &::before {
@@ -51,12 +53,19 @@ export const NavigatorHamburger = styled.div`
     left: 0;
     border-radius: 4px;
     background-color: ${(props) => props.theme.backgroundColor};
+    transition: ${({ isOpen = false }) =>
+        isOpen
+          ? 'background-color 0.2s, top 0.1s, transform 0.1s 0.18s'
+          : 'background-color 0.2s, top 0.1s 0.18s, transform 0.1s'}
+      linear;
   }
   &::after {
-    top: -10px;
+    top: ${({ isOpen = false }) => (isOpen ? '0' : '-10px')};
+    transform: rotate(${({ isOpen = false }) => (isOpen ? '45' : '0')}deg);
   }
   &::before {
-    top: 10px;
+    top: ${({ isOpen = false }) => (isOpen ? '0' : '10px')};
+    transform: rotate(${({ isOpen = false }) => (isOpen ? '-45' : '0')}deg);
   }
 `;
 
