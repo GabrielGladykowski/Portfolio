@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { MENU_LIST } from './Navigation.data';
 import {
   NavigationLink,
   NavigationList,
@@ -9,7 +10,22 @@ import {
 } from './Navigation.styled';
 
 export const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const menuRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handler = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('click', handler);
+
+    return () => {
+      document.removeEventListener('click', handler);
+    };
+  });
 
   const NavigationHidden = () => {
     setIsOpen(!isOpen);
@@ -17,46 +33,21 @@ export const Navigation = () => {
 
   return (
     <NavigationStyled>
-      <NavigatorButton onClick={NavigationHidden}>
-        <NavigatorHamburger />
+      <NavigatorButton onClick={NavigationHidden} ref={menuRef}>
+        <NavigatorHamburger isOpen={isOpen} />
       </NavigatorButton>
       <NavigationPoint aria-hidden={isOpen} isOpen={isOpen}>
-        <NavigationList>
-          <NavigationLink
-            tabIndex={isOpen ? undefined : -1}
-            href="#home"
-            onClick={NavigationHidden}
-          >
-            Home
-          </NavigationLink>
-        </NavigationList>
-        <NavigationList>
-          <NavigationLink
-            tabIndex={isOpen ? undefined : -1}
-            href="#work"
-            onClick={NavigationHidden}
-          >
-            Work
-          </NavigationLink>
-        </NavigationList>
-        <NavigationList>
-          <NavigationLink
-            tabIndex={isOpen ? undefined : -1}
-            href="#aboutMe"
-            onClick={NavigationHidden}
-          >
-            About me
-          </NavigationLink>
-        </NavigationList>
-        <NavigationList>
-          <NavigationLink
-            tabIndex={isOpen ? undefined : -1}
-            href="#contact"
-            onClick={NavigationHidden}
-          >
-            Contact
-          </NavigationLink>
-        </NavigationList>
+        {MENU_LIST.map((element) => (
+          <NavigationList>
+            <NavigationLink
+              tabIndex={isOpen ? undefined : -1}
+              href={element.href}
+              onClick={NavigationHidden}
+            >
+              {element.title}
+            </NavigationLink>
+          </NavigationList>
+        ))}
       </NavigationPoint>
     </NavigationStyled>
   );
