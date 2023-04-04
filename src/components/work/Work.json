@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Watch",
+    "subtitle": "Modeled Design",
+    "description": "This is a modeled design of the Rolex Datejust 41 that was created in React with typescript.",
+    "image": "../../images/watch_portfolio.png",
+    "imageDescription": "Golden watch",
+    "href": "https://react-watch-datejust.netlify.app"
+  }
+]

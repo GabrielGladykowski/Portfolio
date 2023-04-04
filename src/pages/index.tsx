@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { HeadFC, PageProps } from 'gatsby';
+import { HeadFC } from 'gatsby';
 import { GLOBALSTYLE } from '../global/GlobalStyle';
 import { Layout } from '../components/layout/Layout';
 import { Home } from '../components/home/Home';
 import { AboutMe } from '../components/about_me/AboutMe';
-import { Work } from '../components/work/Work';
+import { Works } from '../components/work/Works';
 
-const IndexPage: React.FC<PageProps> = () => {
+const IndexPage = () => {
   return (
     <>
       <GLOBALSTYLE />
       <Layout>
         <Home />
-        <Work />
+        <Works />
         <AboutMe />
       </Layout>
     </>
