@@ -3,12 +3,18 @@ import { COLORS } from '../../const/COLORS';
 
 export const WorkStyled = styled.section`
   height: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    padding: 20px;
+  }
 `;
 
 export const WorkBorder = styled.div`
@@ -25,7 +31,7 @@ export const WorkBorder = styled.div`
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
     text-align: start;
   }
 `;
@@ -84,7 +90,7 @@ export const WorkDescription = styled.p`
 `;
 
 export const WorkImage = styled.picture`
-  width: auto;
+  width: 80%;
   height: 400px;
   display: flex;
   margin: 10px 50px;
