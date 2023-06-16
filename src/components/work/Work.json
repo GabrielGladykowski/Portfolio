@@ -5,6 +5,25 @@
     "description": "This is a modeled design of the Rolex Datejust 41 that was created in React with typescript.",
     "image": "../../images/watch_portfolio.png",
     "imageDescription": "Golden watch",
-    "href": "https://react-watch-datejust.netlify.app"
+    "href": "https://react-watch-datejust.netlify.app",
+    "inProgress": false
+  },
+  {
+    "title": "Wspominaj.pl",
+    "subtitle": "Web application",
+    "description": "It is a Wordpress web application that allows you to create dedicated galleries for deceased people. Created in cooperation with PRO-Sagency.",
+    "image": "../../images/MZTS_App.png",
+    "imageDescription": "Work in progress",
+    "href": "",
+    "inProgress": true
+  },
+  {
+    "title": "MZTS App",
+    "subtitle": "Web application",
+    "description": "This is web application for Masovian Sports Dance Association.",
+    "image": "../../images/MZTS_App.png",
+    "imageDescription": "Work in progress",
+    "href": "",
+    "inProgress": true
   }
 ]
