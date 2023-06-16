@@ -21,6 +21,7 @@ type NodeResult = {
     description: string;
     imageDescription: string;
     href: string;
+    inProgress: boolean;
     image: {
       childImageSharp: {
         fluid: {
@@ -52,6 +53,7 @@ export const Works: React.FC = () => {
             description
             imageDescription
             href
+            inProgress
             image {
               childImageSharp {
                 fluid {
@@ -68,7 +70,7 @@ export const Works: React.FC = () => {
   return (
     <WorkStyled id="work">
       {GET_WORKS.allWorkJson.edges.map((element) => (
-        <WorkBorder key={element?.node.title}>
+        <WorkBorder key={element?.node.title} inProgress={element?.node.inProgress}>
           <WorkWrapper>
             <WorkTextWrapper>
               <WorkTitleWrapper>
@@ -84,7 +86,12 @@ export const Works: React.FC = () => {
                 alt={element?.node.imageDescription}
               />
             </WorkImage>
-            <WorkLink href={element?.node.href} target="_blank" rel="noopener">
+            <WorkLink
+              inProgress={element?.node.inProgress}
+              href={element?.node.href}
+              target="_blank"
+              rel="noopener"
+            >
               View Project
             </WorkLink>
           </WorkWrapper>

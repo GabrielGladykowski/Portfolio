@@ -17,13 +17,16 @@ export const WorkStyled = styled.section`
   }
 `;
 
-export const WorkBorder = styled.div`
+export const WorkBorder = styled.div<{ inProgress: boolean }>`
   height: auto;
   width: auto;
   margin: 20px;
   padding: 20px 0;
   border-radius: 15px;
   box-shadow: 0 0 20px ${COLORS.BORDER_AND_SHADOW};
+  background-color: ${({ inProgress }) => (inProgress ? '#818181' : '')};
+  cursor: ${({ inProgress }) => (inProgress ? 'not-allowed' : '')};
+  opacity: ${({ inProgress }) => (inProgress ? '30%' : '')};
 
   @media (min-width: 1024px) {
     display: flex;
@@ -48,17 +51,19 @@ export const WorkWrapper = styled.div`
 
 export const WorkTextWrapper = styled.div`
   @media (min-width: 1024px) {
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 10px;
     text-align: start;
   }
 `;
 
 export const WorkTitleWrapper = styled.header`
   @media (min-width: 1024px) {
-    width: 200px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     margin: 0 20px;
@@ -108,13 +113,14 @@ export const WorkImage = styled.picture`
   }
 `;
 
-export const WorkLink = styled.a`
+export const WorkLink = styled.a<{ inProgress: boolean }>`
   display: flex;
   position: relative;
   text-decoration: none;
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  pointer-events: ${({ inProgress }) => (inProgress ? 'none' : '')};
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
 
@@ -136,7 +142,7 @@ export const WorkLink = styled.a`
 
   @media (min-width: 1024px) {
     position: absolute;
-    top: 105px;
+    top: 115px;
 
     ::after {
       width: 20px;
