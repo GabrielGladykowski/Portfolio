@@ -19,7 +19,7 @@ export const WorkStyled = styled.section`
 
 export const WorkBorder = styled.div<{ inProgress: boolean }>`
   height: auto;
-  width: auto;
+  width: 100%;
   margin: 20px;
   padding: 20px 0;
   border-radius: 15px;
@@ -29,6 +29,7 @@ export const WorkBorder = styled.div<{ inProgress: boolean }>`
   opacity: ${({ inProgress }) => (inProgress ? '30%' : '')};
 
   @media (min-width: 1024px) {
+    width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
