@@ -23,10 +23,13 @@ export const WorkBorder = styled.div<{ inProgress: boolean }>`
   margin: 20px;
   padding: 20px 0;
   border-radius: 15px;
-  box-shadow: 0 0 20px ${COLORS.BORDER_AND_SHADOW};
-  background-color: ${({ inProgress }) => (inProgress ? '#818181' : '')};
+  box-shadow: ${({ inProgress }) => (inProgress ? 'inset 0 0 25px #585858' : '0 0 20px #818181')};
+  background-color: ${({ inProgress }) =>
+    inProgress
+      ? `${(props: { theme: { backgroundColorInProgress: any } }) =>
+          props.theme.backgroundColorInProgress}`
+      : ''};
   cursor: ${({ inProgress }) => (inProgress ? 'not-allowed' : '')};
-  opacity: ${({ inProgress }) => (inProgress ? '30%' : '')};
 
   @media (min-width: 1024px) {
     width: auto;
@@ -50,7 +53,18 @@ export const WorkWrapper = styled.div`
   text-align: center;
 `;
 
-export const WorkTextWrapper = styled.div`
+export const WorkInProgress = styled.p<{ inProgress: boolean }>`
+  display: ${({ inProgress }) => (inProgress ? 'flex' : 'none')};
+  position: absolute;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: ${(props) => props.theme.color};
+  z-index: 10;
+`;
+
+export const WorkTextWrapper = styled.div<{ inProgress: boolean }>`
+  opacity: ${({ inProgress }) => (inProgress ? '30%' : '100%')};
+
   @media (min-width: 1024px) {
     height: 80px;
     display: flex;
@@ -95,7 +109,7 @@ export const WorkDescription = styled.p`
   }
 `;
 
-export const WorkImage = styled.picture`
+export const WorkImage = styled.picture<{ inProgress: boolean }>`
   width: 80%;
   height: 400px;
   display: flex;
@@ -105,6 +119,7 @@ export const WorkImage = styled.picture`
   box-shadow: 0 5px 10px ${COLORS.BLACK};
   object-fit: cover;
   transition: ${(props) => props.theme.transitionColorBorder};
+  opacity: ${({ inProgress }) => (inProgress ? '30%' : '100%')};
 
   @media (min-width: 1024px) {
     width: 740px;
@@ -124,6 +139,7 @@ export const WorkLink = styled.a<{ inProgress: boolean }>`
   pointer-events: ${({ inProgress }) => (inProgress ? 'none' : '')};
   color: ${(props) => props.theme.color};
   transition: ${(props) => props.theme.transitionColor};
+  opacity: ${({ inProgress }) => (inProgress ? '30%' : '100%')};
 
   :active {
     color: ${(props) => props.theme.underlined};

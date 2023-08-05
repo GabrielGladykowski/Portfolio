@@ -9,7 +9,7 @@ export const CookiesStyled = styled.aside`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 20;
   padding: 10px;
   bottom: 25px;
   border-radius: 10px;
