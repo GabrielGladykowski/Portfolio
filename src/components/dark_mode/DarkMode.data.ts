@@ -2,6 +2,7 @@ import { COLORS } from '../../const/COLORS';
 
 export const darkTheme = {
   backgroundColor: `${COLORS.BLACK}`,
+  backgroundColorInProgress: `${COLORS.INPROGRESSDARK}`,
   backgroundColorBorder: 'transparent',
   backgroundColorButton: `${COLORS.WHITE}`,
   color: `${COLORS.WHITE}`,
@@ -11,6 +12,7 @@ export const darkTheme = {
 };
 export const lightTheme = {
   backgroundColor: `${COLORS.WHITE}`,
+  backgroundColorInProgress: `${COLORS.INPROGRESSLIGHT}`,
   backgroundColorBorder: `${COLORS.BLACK}`,
   backgroundColorButton: `${COLORS.BLACK}`,
   color: `${COLORS.BLACK}`,

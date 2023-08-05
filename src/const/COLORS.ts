@@ -3,4 +3,6 @@ export const COLORS = {
   BORDER_AND_SHADOW: '#818181',
   BLACK: '#242424',
   WHITE: '#FFFFFF',
+  INPROGRESSLIGHT: '#acacac',
+  INPROGRESSDARK: '#585858',
 };

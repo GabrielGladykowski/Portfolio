@@ -6,24 +6,27 @@
     "image": "../../images/watch_portfolio.png",
     "imageDescription": "Golden watch",
     "href": "https://react-watch-datejust.netlify.app",
-    "inProgress": false
+    "inProgress": false,
+    "inProgressText": "work in progress"
   },
   {
     "title": "Wspominaj.pl",
     "subtitle": "Web application",
     "description": "It is a Wordpress web application that allows you to create dedicated galleries for deceased people. Created in cooperation with PRO-Sagency.",
-    "image": "../../images/MZTS_App.png",
+    "image": "../../images/none_image.png",
     "imageDescription": "Work in progress",
     "href": "",
-    "inProgress": true
+    "inProgress": true,
+    "inProgressText": "work in progress"
   },
   {
     "title": "MZTS App",
     "subtitle": "Web application",
-    "description": "This is web application for Masovian Sports Dance Association.",
-    "image": "../../images/MZTS_App.png",
+    "description": "This is web application for Masovian Sports Dance Association. Created in cooperation with PRO-Sagency.",
+    "image": "../../images/none_image.png",
     "imageDescription": "Work in progress",
     "href": "",
-    "inProgress": true
+    "inProgress": true,
+    "inProgressText": "work in progress"
   }
 ]
