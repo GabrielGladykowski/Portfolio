@@ -109,6 +109,13 @@ export const WorkDescription = styled.p`
   }
 `;
 
+export const WorkLinkDescription = styled.a<{ inProgress: boolean }>`
+  font-size: 20px;
+  text-decoration: none;
+  pointer-events: ${({ inProgress }) => (inProgress ? 'none' : '')};
+  color: ${COLORS.PRIMARY};
+`;
+
 export const WorkImage = styled.picture<{ inProgress: boolean }>`
   width: 80%;
   height: 400px;
