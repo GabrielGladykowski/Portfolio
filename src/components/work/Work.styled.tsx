@@ -166,7 +166,8 @@ export const WorkLink = styled.a<{ inProgress: boolean }>`
 
   @media (min-width: 1024px) {
     position: absolute;
-    top: 115px;
+    top: 110px;
+    left: 390px;
 
     ::after {
       width: 20px;
