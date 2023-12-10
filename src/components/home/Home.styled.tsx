@@ -64,8 +64,51 @@ export const Logo = styled.div`
   display: flex;
   position: absolute;
   top: 8rem;
-  border-radius: 50%;
   background-color: ${COLORS.PRIMARY};
+  animation: blub 15s ease-in-out infinite;
+  transition: border-radius 1s ease-in-out;
+
+  @keyframes blub {
+    0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    10% {
+      border-radius: 60% 30% 70% 40%/50% 60% 50% 60%;
+    }
+
+    20% {
+      border-radius: 30% 60% 70% 40%/50% 60% 60% 50%;
+    }
+
+    30% {
+      border-radius: 30% 60% 40% 70%/50% 60% 30% 60%;
+    }
+
+    40% {
+      border-radius: 70% 60% 40% 30%/60% 80% 50% 60%;
+    }
+
+    50% {
+      border-radius: 70% 40% 60% 30%/60% 80% 50% 60%;
+    }
+
+    60% {
+      border-radius: 40% 70% 30% 60%/70% 50% 60% 50%;
+    }
+
+    70% {
+      border-radius: 40% 70% 60% 30%/50% 60% 80% 50%;
+    }
+
+    80% {
+      border-radius: 60% 30% 70% 40%/50% 60% 50% 60%;
+    }
+
+    100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+  }
 
   @media (min-width: 1024px) {
     position: relative;
