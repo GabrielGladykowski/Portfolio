@@ -66,7 +66,7 @@ export const Logo = styled.div`
   top: 8rem;
   background-color: ${COLORS.PRIMARY};
   animation: blub 15s ease-in-out infinite;
-  transition: border-radius 1s ease-in-out;
+  transition: border-radius 1s linear;
 
   @keyframes blub {
     0% {

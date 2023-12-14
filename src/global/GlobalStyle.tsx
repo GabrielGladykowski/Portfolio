@@ -22,4 +22,18 @@ export const GLOBALSTYLE = createGlobalStyle`
       font-family: Montserrat;
       letter-spacing: 5%;
     }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #e6e6e6;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #acacac;
+      border-radius: 10px;
+    }
 `;
