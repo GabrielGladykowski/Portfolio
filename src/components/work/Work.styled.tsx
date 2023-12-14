@@ -79,6 +79,7 @@ export const WorkTextWrapper = styled.div<{ inProgress: boolean }>`
 export const WorkTitleWrapper = styled.header`
   @media (min-width: 1024px) {
     width: 300px;
+    word-wrap: break-word;
     display: flex;
     flex-direction: column;
     margin: 0 20px;
@@ -106,6 +107,8 @@ export const WorkDescription = styled.p`
   @media (min-width: 1024px) {
     width: 400px;
     padding: 0;
+    height: 120px;
+    overflow-y: auto;
   }
 `;
 

@@ -10,13 +10,43 @@
     "inProgressText": "work in progress"
   },
   {
-    "title": "Wspominaj.pl",
+    "title": "Agnieszka Janczak",
+    "subtitle": "Web application",
+    "description": "This is a WordPress-based website, dedicated to supporting women struggling with eating disorders. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/agnieszkajanczak.png",
+    "imageDescription": "Home page agnieszkajanczak.pl",
+    "href": "https://agnieszkajanczak.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
+    "title": "Żuławskie Zacisze",
+    "subtitle": "Web application",
+    "description": "This is a WordPress-based website where we showcase and offer houses in a modern housing estate. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/zulawskie-zacisze.png",
+    "imageDescription": "Home page zulawskie-zacisze.pl",
+    "href": "https://zulawskie-zacisze.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
+    "title": "Wspominaj",
     "subtitle": "Web application",
     "description": "It is a Wordpress web application that allows you to create dedicated galleries for deceased people. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
-    "image": "../../images/none_image.png",
-    "imageDescription": "Work in progress",
-    "href": "",
-    "inProgress": true,
+    "image": "../../images/wspominaj.png",
+    "imageDescription": "Home page wspominaj.pl",
+    "href": "https://wspominaj.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
+    "title": "Voltsf",
+    "subtitle": "Web application",
+    "description": "This is a WordPress-based website that showcases and offers modern solar panels, photovoltaics, carports, and more. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/voltsf.png",
+    "imageDescription": "Home page voltsf.pl",
+    "href": "https://voltsf.pl/",
+    "inProgress": false,
     "inProgressText": "work in progress"
   },
   {
