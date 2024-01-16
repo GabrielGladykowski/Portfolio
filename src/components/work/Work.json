@@ -20,6 +20,16 @@
     "inProgressText": "work in progress"
   },
   {
+    "title": "Wedding Team",
+    "subtitle": "Web application",
+    "description": "This is a WordPress-based website, dedicated to supporting women struggling with eating disorders. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/braciagluszynscy.png",
+    "imageDescription": "Home page weddingteam-bracia.pl",
+    "href": "https://weddingteam-bracia.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
     "title": "Żuławskie Zacisze",
     "subtitle": "Web application",
     "description": "This is a WordPress-based website where we showcase and offer houses in a modern housing estate. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
