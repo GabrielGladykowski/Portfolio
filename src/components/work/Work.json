@@ -10,6 +10,26 @@
     "inProgressText": "work in progress"
   },
   {
+    "title": "Autoradex",
+    "subtitle": "Web shop",
+    "description": "This is a Prestashop-based web shop, it offers a wide range of high-quality car parts, covering various brands and vehicle models, as well as accessories and equipment. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/autoradex.png",
+    "imageDescription": "Home page agnieszkajanczak.pl",
+    "href": "https://autoradex.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
+    "title": "Diamora",
+    "subtitle": "Web shop",
+    "description": "This is a Prestashop-based web shop, It offers a diverse range of high-quality diamond rings, featuring various styles and designs, catering to different preferences and occasions. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/diamora.png",
+    "imageDescription": "Home page agnieszkajanczak.pl",
+    "href": "https://diamora.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
     "title": "Agnieszka Janczak",
     "subtitle": "Website",
     "description": "This is a WordPress-based website, dedicated to supporting women struggling with eating disorders. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
@@ -30,12 +50,12 @@
     "inProgressText": "work in progress"
   },
   {
-    "title": "Żuławskie Zacisze",
+    "title": "Polso II",
     "subtitle": "Website",
-    "description": "This is a WordPress-based website where we showcase and offer houses in a modern housing estate. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
-    "image": "../../images/zulawskie-zacisze.png",
-    "imageDescription": "Home page zulawskie-zacisze.pl",
-    "href": "https://zulawskie-zacisze.pl/",
+    "description": "This is a WordPress-based website. Created for a company specializing in printers, scanners, etc., created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/polso2.png",
+    "imageDescription": "Home page polso2.pl",
+    "href": "https://polso2.com.pl/",
     "inProgress": false,
     "inProgressText": "work in progress"
   },
@@ -46,6 +66,16 @@
     "image": "../../images/wspominaj.png",
     "imageDescription": "Home page wspominaj.pl",
     "href": "https://wspominaj.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
+    "title": "Żuławskie Zacisze",
+    "subtitle": "Website",
+    "description": "This is a WordPress-based website where we showcase and offer houses in a modern housing estate. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/zulawskie-zacisze.png",
+    "imageDescription": "Home page zulawskie-zacisze.pl",
+    "href": "https://zulawskie-zacisze.pl/",
     "inProgress": false,
     "inProgressText": "work in progress"
   },
