@@ -10,6 +10,16 @@
     "inProgressText": "work in progress"
   },
   {
+    "title": "Hausland",
+    "subtitle": "Website",
+    "description": "This is a WordPress-based website for a developer selling and renting apartments, plots, etc. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/hausland.png",
+    "imageDescription": "Home page hausland.pl",
+    "href": "https://hausland.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
     "title": "Autoradex",
     "subtitle": "Web shop",
     "description": "This is a Prestashop-based web shop, it offers a wide range of high-quality car parts, covering various brands and vehicle models, as well as accessories and equipment. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
@@ -26,6 +36,16 @@
     "image": "../../images/diamora.png",
     "imageDescription": "Home page agnieszkajanczak.pl",
     "href": "https://diamora.pl/",
+    "inProgress": false,
+    "inProgressText": "work in progress"
+  },
+  {
+    "title": "Jartech",
+    "subtitle": "Website",
+    "description": "This is a WordPress-based website selling parts for waterjet machines. Created in cooperation with |https://pro-s.net.pl|PRO-S agency.|",
+    "image": "../../images/jartech.png",
+    "imageDescription": "Home page jartech.elblag.pl",
+    "href": "https://jartech.elblag.pl/",
     "inProgress": false,
     "inProgressText": "work in progress"
   },
